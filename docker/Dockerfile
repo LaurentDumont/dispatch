@@ -38,7 +38,7 @@ RUN for key in \
     ; do \
         # Let's try several servers to ensure we get all the keys
         for server in \
-            keys.openpgp.org \
+            keyserver.ubuntu.com \
         ; do \
 	        gpg2 --batch --keyserver "$server" --recv-keys "$key"; \
         done \
